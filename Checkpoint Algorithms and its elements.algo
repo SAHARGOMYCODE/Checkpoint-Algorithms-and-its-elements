@@ -1,0 +1,35 @@
+ALGORITHM phrase
+VAR
+ ph=STRING;
+ ch=CHAR;
+ n,i =INTEGER;
+ i=INTEGER;
+ nbr=INTEGER;
+ 
+BEGIN
+ write("entrer une phrase" );
+ read(ph);
+ FOR i FROM 1 TO n STEP step  DO
+     ph:=ch;
+     nbr:=0;
+     nbr:=nbr+1;
+    write ("le nombre de mots est",nbr);
+
+ END_FOR
+
+ FOR i FROM 1 TO n STEP step  DO
+ ph:=ch[i];
+ nbr:=0;
+ nbr:=ch[i]+ch[i+1];
+ nbr:=nbr+1;
+    write ("le nombre de mots est",nbr);
+
+ END_FOR
+ FOR i FROM 1 TO n STEP step  DO
+ nbr:=0;
+ IF (ph[i]="a", ph[i]="e", ph[i]="i" ph[i]="o", ph[i]="u", ph[i]="y")
+  nbr:=nbr+1;
+    write ("le nombre de voyelles  est", nbr);
+END_IF
+ END_FOR
+END
